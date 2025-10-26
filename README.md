@@ -1,6 +1,3 @@
-Sure! Here's a **short, attractive, and professional README** for your Nostra project, under ~32 lines:
-
----
 
 # **Nostra E-Commerce Website**
 
