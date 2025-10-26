@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nostra | Fashion Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- ===== POPUP ===== -->
+  <div id="signup-popup" class="popup">
+    <p>Sign up and get 25% off!</p>
+    <span id="close-popup" class="cursor-pointer">X</span>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1 class="logo">Nostra</h1>
+    </div>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="collection.html">Collections</a></li>
+      <li><a href="#most-wanted">Most Wanted</a></li>
+      <li><a href="#new-arrivals">New Arrivals</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Menu - Mobile Only -->
+    <div id="menu-toggle" class="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menu-overlay" class="menu-overlay"></div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div id="menu-close" class="menu-close"><i class="fa fa-times"></i></div>
+    <ul>
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#brands" onclick="closeMenu()">Brands</a></li>
+      <li><a href="#most-wanted" onclick="closeMenu()">Most Wanted</a></li>
+      <li><a href="#new-arrivals" onclick="closeMenu()">New Arrivals</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+
+
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="slider">
+      <div class="slide active"
+        style="background-image: url('different_fashion_styles_up_f6d5fe49-b92d-4840-bb1d-c57b86907c27.webp')">
+        <div class="content">
+          <h2>Level up your style with our</h2>
+          <p>Summer Collections</p> <a href="collections.html" class="btn">Shop Now →</a>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('1.jpg')">
+        <div class="content">
+          <h2 class="content1">Bold Looks for Bold You</h2>
+          <p  class="content2">Exclusive Collections</p>
+          <a href="collection.html" class="btn">Explore →</a>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="content2">
+          <h2>Level up your style with our</h2>
+          <p>Exclusive Collections</p>
+          <button class="prev">❮</button>
+          <a href="collection.html" class="btn">Explore →</a>
+          <button class="next">❯</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BRANDS ===== -->
+  <h2 class="section-heading" style="margin-top: 5vw;">Brands</h2>
+  <div class="brands">
+    <div class="brands-item"><img class="brands-icon" src="puma.png" alt="">
+      <p>Puma</p>
+    </div>
+    <div class="brands-item"><img class="brands-icon" src="adidas.png" alt="">
+      <p>Adidas</p>
+    </div>
+    <div class="brands-item"><img class="brands-icon" src="simple.png" alt="">
+      <p>Simple</p>
+    </div>
+    <div class="brands-item"><img class="brands-icon" src="leaves.png" alt="">
+      <p>Leaves</p>
+    </div>
+    <div class="brands-item"><img class="brands-icon" src="behance.png" alt="">
+      <p>Behance</p>
+    </div>
+    <div class="brands-item"><img class="brands-icon" src="twitch.png" alt="">
+      <p>Twitch</p>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOMER EXPERIENCE / SERVICES ===== -->
+  <div class="initial-scroll-animate reveal-scroll-animate">
+    <div class="service">
+      <div class="servives-container-1">
+        <div>
+          <h2>We Provide Best</h2>
+          <h2>Customer Experiences</h2>
+        </div>
+        <div>
+          <p>|| We ensure that our customer have the best shopping experience</p>
+        </div>
+      </div>
+      <div class="servives-container-2">
+        <div> <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+          <h4>Original Products</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur. </p>
+        </div>
+        <div> <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+          <h4>Satisfaction Guarantee</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur. </p>
+        </div>
+        <div> <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+          <h4>New Arrival Everyday</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur. </p>
+        </div>
+        <div> <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+          <h4>Fast & Free Shipping</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NEW ARRIVALS ===== -->
+  <section id="new-arrivals-section" class="new-arrivals-section">
+    <h2 class="section-title">🛍️ New Arrivals</h2>
+    <div class="new-arrivals">
+      <div class="new-arrival-item">
+        <img src="n6.jpg" alt="Casual Shirt">
+        <h3>Casual wear</h3>
+        <p>$35</p>
+        <a href="collection.html"><button class="view-more"><span>→</span></button></a>
+      </div>
+      <div class="new-arrival-item">
+        <img src="f8.jpg" alt="Women Wear">
+        <h3>Women wear</h3>
+        <p>$35</p>
+        <a href="collection.html"><button class="view-more"><span>→</span></button></a>
+      </div>
+      <div class="new-arrival-item">
+        <img src="watches.jpg" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>$99</p>
+        <a href="collection.html"><button class="view-more"><span>→</span></button></a>
+      </div>
+      <div class="new-arrival-item">
+        <img src="shoe.jpg" alt="Trendy Shoes">
+        <h3>Trendy Shoes</h3>
+        <p>$65</p>
+        <a href="collection.html"><button class="view-more"><span>→</span></button></a>
+      </div>
+      <div class="new-arrival-item">
+        <img src="n4.jpg" alt="Men Shirt">
+        <h3>Men Shirt</h3>
+        <p>$35</p>
+        <a href="collection.html"><button class="view-more"><span>→</span></button></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== MOST WANTED ===== -->
+  <div class="initial-scroll-animate reveal-scroll-animate">
+    <h2 id="most-wanted" class="most-wanted11" style="margin-top: 5vw;">Most Wanted</h2>
+    <div class="most-wanted">
+      <div class="most-wanted-container">
+        <img style="width: 20vw;" src="n4.jpg" alt="">
+        <p class="sale-overlay">sale</p>
+        <img class="like-button" src="blackheart.png" alt="">
+      </div>
+
+      <div class="most-wanted-container">
+        <img style="width: 20vw;" src="1.webp" alt="">
+        <p class="sale-overlay">sale</p>
+        <img class="like-button" src="blackheart.png" alt="">
+      </div>
+
+      <div class="most-wanted-container">
+        <img style="width: 20vw;" src="2.webp" alt="">
+        <p class="sale-overlay">sale</p>
+        <img class="like-button" src="blackheart.png" alt="">
+      </div>
+
+      <div class="most-wanted-container">
+        <img style="width: 20vw;" src="3.webp" alt="">
+        <p class="sale-overlay">sale</p>
+        <img class="like-button" src="blackheart.png" alt="">
+      </div>
+
+      <div class="most-wanted-container">
+        <img style="width: 20vw;" src="4.webp" alt="">
+        <p class="sale-overlay">sale</p>
+        <img class="like-button" src="blackheart.png" alt="">
+      </div>
+
+      <div class="most-wanted-container">
+        <img style="width: 20vw;" src="5.webp" alt="">
+        <p class="sale-overlay">sale</p>
+        <img class="like-button" src="blackheart.png" alt="">
+      </div>
+
+      <div class="most-wanted-container">
+        <img style="width: 20vw;" src="6.webp" alt="">
+        <p class="sale-overlay">sale</p>
+        <img class="like-button" src="blackheart.png" alt="">
+      </div>
+
+      <div class="most-wanted-container">
+        <img style="width: 20vw;" src="7.webp" alt="">
+        <p class="sale-overlay">sale</p>
+        <img class="like-button" src="blackheart.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="initial-scroll-animate reveal-scroll-animate">
+
+    <div class="limited-offer">
+      <div class="limited-offer-img">
+        <img src="" alt="">
+      </div>
+      <div class="limited-offer-text">
+        <h2>Limited Offer</h2>
+        <h4>35% OFF on this for the first 30 Customers</h4>
+
+        <a href="collection.html">
+          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </a>
+      </div>
+    </div>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+      <h2>Subscribe for Updates</h2>
+      <input type="email" placeholder="Enter your email">
+      <button class="btn">Subscribe</button>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>© 2025 Nostra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

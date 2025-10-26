@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections | Nostra</title>
+  <link rel="stylesheet" href="collection.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== POPUP ===== -->
+  <div id="signup-popup" class="popup">
+    <p>Sign up and get 25% off!</p>
+    <span id="close-popup" class="cursor-pointer">X</span>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">
+       <h1 class="logo">Nostra</h1>
+    </div>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#brands">Brands</a></li>
+      <li><a href="index.html#most-wanted">Most Wanted</a></li>
+      <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+      <li><a href="collections.html" class="active">Collections</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Menu -->
+    <div id="menu-toggle" class="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menu-overlay" class="menu-overlay"></div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div id="menu-close" class="menu-close"><i class="fa fa-times"></i></div>
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="index.html#brands" onclick="closeMenu()">Brands</a></li>
+      <li><a href="index.html#most-wanted" onclick="closeMenu()">Most Wanted</a></li>
+      <li><a href="index.html#new-arrivals" onclick="closeMenu()">New Arrivals</a></li>
+      <li><a href="collections.html" class="active" onclick="closeMenu()">Collections</a></li>
+      <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== COLLECTIONS CONTENT ===== -->
+  <div class="collections-container">
+
+    <!-- LEFT FILTER COLUMN -->
+     <div class="filter-actions">
+  <button id="clear-filters">Clear All Filters</button>
+  <p id="product-count">Showing 0 products</p>
+</div>
+
+    <div class="filter-column">
+      <h3>Colors</h3>
+      <label><input type="checkbox" name="color" value="red"> Red</label>
+      <label><input type="checkbox" name="color" value="blue"> Blue</label>
+      <label><input type="checkbox" name="color" value="white"> White</label>
+      <label><input type="checkbox" name="color" value="green"> Green</label>
+
+      <h3>Arrivals</h3>
+      <label><input type="checkbox" name="arrival" value="new"> New</label>
+      <label><input type="checkbox" name="arrival" value="old"> Old</label>
+
+      <h3>Occasion</h3>
+      <label><input type="checkbox" name="occasion" value="summer"> Summer</label>
+      <label><input type="checkbox" name="occasion" value="party"> Party</label>
+      <label><input type="checkbox" name="occasion" value="beach"> Beach</label>
+    </div>
+
+    <!-- RIGHT PRODUCTS COLUMN -->
+    <div class="product-column">
+      <div class="products" id="products">
+
+        <!-- PRODUCT ITEM EXAMPLES -->
+        <div class="product-item" data-color="red" data-arrival="new" data-occasion="summer">
+          <img src="n6.jpg" alt="Casual Red Shirt">
+          <h3>Casual Red Shirt</h3>
+          <p>$35</p>
+        </div>
+
+        <div class="product-item" data-color="blue" data-arrival="new" data-occasion="party">
+          <img src="f8.jpg" alt="Blue Party Shirt">
+          <h3>Blue Party Shirt</h3>
+          <p>$40</p>
+        </div>
+
+        <div class="product-item" data-color="white" data-arrival="old" data-occasion="beach">
+          <img src="whitw beach.jpg" alt="White Beach Shirt">
+          <h3>White Beach Shirt</h3>
+          <p>$30</p>
+        </div>
+
+        <div class="product-item" data-color="green" data-arrival="new" data-occasion="summer">
+          <img src="green summer.jpg" alt="Green Summer Shirt">
+          <h3>Green Summer Shirt</h3>
+          <p>$38</p>
+        </div>
+
+        <div class="product-item" data-color="red" data-arrival="old" data-occasion="party">
+          <img src="party.jpg" alt="Red Party Dress">
+          <h3>Red Party Dress</h3>
+          <p>$55</p>
+        </div>
+
+        <div class="product-item" data-color="blue" data-arrival="new" data-occasion="beach">
+          <img src="red beach.jpg" alt="Blue Beach Dress">
+          <h3>Beach Dress</h3>
+          <p>$48</p>
+        </div>
+
+        <div class="product-item" data-color="red" data-arrival="new" data-occasion="summer">
+          <img src="party.jpg" alt="Casual Red Shirt">
+          <h3>Casual Red Shirt</h3>
+          <p>$35</p>
+        </div>
+
+        <div class="product-item" data-color="blue" data-arrival="new" data-occasion="party">
+          <img src="Blue Beach Dress.jpg" alt="Blue Party Shirt">
+          <h3>Blue Party Shirt</h3>
+          <p>$40</p>
+        </div>
+
+        <div class="product-item" data-color="white" data-arrival="old" data-occasion="beach">
+          <img src="green summer.jpg" alt="White Beach Shirt">
+          <h3>greenShirt</h3>
+          <p>$30</p>
+        </div>
+
+        <div class="product-item" data-color="green" data-arrival="new" data-occasion="party">
+          <img src="wedding.jpg" alt="Green Summer Shirt">
+          <h3>red saree</h3>
+          <p>$38</p>
+        </div>
+
+        <div class="product-item" data-color="red" data-arrival="old" data-occasion="traditional">
+          <img src="traditional.jpg" alt="Red Party Dress">
+          <h3>traditional</h3>
+          <p>$55</p>
+        </div>
+
+        <div class="product-item" data-color="blue" data-arrival="new" data-occasion="party">
+          <img src="party.jpg" alt="party wear">
+          <h3>Party wear</h3>
+          <p>$48</p>
+        </div>
+
+        <!-- Add more product items as needed -->
+      </div>
+    </div>
+
+  </div>
+
+   <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <h2>Subscribe for Updates</h2>
+    <input type="email" placeholder="Enter your email">
+    <button class="btn">Subscribe</button>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Nostra. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Nostra</title>
+  <link rel="stylesheet" href="collection.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+       <h1 class="logo">Nostra</h1>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#brands">Brands</a></li>
+      <li><a href="index.html#most-wanted">Most Wanted</a></li>
+      <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contactus.html" class="active">Contact</a></li>
+    </ul>
+
+    <div id="menu-toggle" class="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div id="menu-overlay" class="menu-overlay"></div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div id="menu-close" class="menu-close"><i class="fa fa-times"></i></div>
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="index.html#brands" onclick="closeMenu()">Brands</a></li>
+      <li><a href="index.html#most-wanted" onclick="closeMenu()">Most Wanted</a></li>
+      <li><a href="index.html#new-arrivals" onclick="closeMenu()">New Arrivals</a></li>
+      <li><a href="collections.html" onclick="closeMenu()">Collections</a></li>
+      <li><a href="contactus.html" onclick="closeMenu()" class="active">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- LEFT INFO -->
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Reach out for any inquiries, feedback, or support.</p>
+        <div class="info-item">
+          <i class="fa fa-phone"></i>
+          <span>+91 123-456-7890</span>
+        </div>
+        <div class="info-item">
+          <i class="fa fa-envelope"></i>
+          <span>support@nostra.com</span>
+        </div>
+        <div class="info-item">
+          <i class="fa fa-map-marker-alt"></i>
+          <span>123 Fashion Street, Chennai, India</span>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="contact-form">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Nostra. All rights reserved.</p>
+  </footer>
+
+  <script src="collections.js"></script>
+</body>
+</html>
